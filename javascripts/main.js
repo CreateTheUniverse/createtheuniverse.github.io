@@ -1,6 +1,6 @@
-var protrons = 100;
-var neutrons = 100;
-var electrons = 100;
+var protrons = 0;
+var neutrons = 0;
+var electrons = 0;
 
 function protClick(number){
     protrons = protrons + number;
@@ -17,7 +17,7 @@ function elecClick(number){
     document.getElementById("electrons").innerHTML = electrons;
 };
 
-var Hydrogen = 100;
+var Hydrogen = 0;
 
 function buyHydrogen(){
     if(protrons >= 1 && electrons >= 1){
