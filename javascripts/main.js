@@ -1,6 +1,6 @@
-var protrons = 0;
+var protrons = 10;
 var neutrons = 0;
-var electrons = 0;
+var electrons = 10;
 
 function protClick(number){
     protrons = protrons + number;
@@ -17,7 +17,7 @@ function elecClick(number){
     document.getElementById("electrons").innerHTML = electrons;
 };
 
-var Hydrogen = 0;
+var Hydrogen = 10;
 
 function buyHydrogen(){
     if(protrons >= 1 && electrons >= 1){
@@ -33,7 +33,7 @@ function buyHydrogen(){
 };
 
 function HydrClick(number){
-	if(protrons >= 1 && electrons >= 1){
+	if(protrons >= number && electrons >= number){
         	Hydrogen = Hydrogen + number;
         	protrons = protrons - number;
         	electrons = electrons - number;
@@ -90,13 +90,12 @@ function elecCreator(){
 function HCreator(){
     var HCreatorCost = Math.floor(10 * Math.pow(1.1,HCreators));
     if(Hydrogen >= HCreatorCost){
-    	if(protrons >= 1 && neutrons >= 1){
 	        HCreators = HCreators + 1;
         	Hydrogen = Hydrogen - HCreatorCost;
         	document.getElementById('HCreators').innerHTML = HCreators;
         	document.getElementById('H').innerHTML = Hydrogen;
     	};
-    };
+
     var nextHCreatorCost = Math.floor(10 * Math.pow(1.1,HCreators));
     document.getElementById('HCreatorCost').innerHTML = nextHCreatorCost;
     
@@ -107,6 +106,5 @@ window.setInterval(function(){
 	protClick(protCreators);
 	neutClick(neutCreators);
 	elecClick(elecCreators);
-	HydrClick(HCreators);
-	
+    HydrClick(HCreators);
 }, 1000);
