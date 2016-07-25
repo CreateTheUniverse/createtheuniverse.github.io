@@ -50,7 +50,7 @@ function protCreator(){
     
 };
 
-function neuCreator(){
+function neutCreator(){
     var neutCreatorCost = Math.floor(10 * Math.pow(1.1,neutCreators));
     if(neutrons >= neutCreatorCost){
         neutCreators = neutCreators + 1;
@@ -62,7 +62,7 @@ function neuCreator(){
     document.getElementById('neutCreatorCost').innerHTML = nextneutCreatorCost;
     
 };
-function neuCreator(){
+function elecCreator(){
     var elecCreatorCost = Math.floor(10 * Math.pow(1.1,elecCreators));
     if(electrons >= elecCreatorCost){
         elecCreators = elecCreators + 1;
