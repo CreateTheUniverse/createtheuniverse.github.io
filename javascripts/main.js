@@ -32,6 +32,17 @@ function buyHydrogen(){
     
 };
 
+function HydrClick(number){
+	if(protrons >= 1 && electrons >= 1){
+        	Hydrogen = Hydrogen + number;
+        	protrons = protrons - number;
+        	electrons = electrons - number;
+        	document.getElementById('H').innerHTML = Hydrogen;
+        	document.getElementById('protrons').innerHTML = protrons;
+        	document.getElementById('electrons').innerHTML = electrons;
+	}
+}
+
 var protCreators = 0;
 var neutCreators = 0;
 var elecCreators = 0;
