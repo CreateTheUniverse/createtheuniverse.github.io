@@ -19,7 +19,7 @@ function elecClick(number){
 
 var Hydrogen = 0;
 
-function buyHydrogen(){
+function HydrClick(){
     if(protrons >= 1 && electrons >= 1){
         Hydrogen = Hydrogen + 1;
         protrons = protrons - 1;
