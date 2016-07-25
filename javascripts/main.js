@@ -41,7 +41,7 @@ function protCreator(){
     var protCreatorCost = Math.floor(10 * Math.pow(1.1,protCreators));
     if(protrons >= protCreatorCost){
         protCreators = protCreators + 1;
-        protons = protrons - protCreatorCost;
+        protrons = protrons - protCreatorCost;
         document.getElementById('protCreators').innerHTML = protCreators;
         document.getElementById('protrons').innerHTML = protrons;
     };
@@ -49,6 +49,32 @@ function protCreator(){
     document.getElementById('protCreatorCost').innerHTML = nextprotCreatorCost;
     
 };
+
+function neuCreator(){
+    var neutCreatorCost = Math.floor(10 * Math.pow(1.1,neutCreators));
+    if(neutrons >= neutCreatorCost){
+        neutCreators = neutCreators + 1;
+        neutrons = neutrons - neutCreatorCost;
+        document.getElementById('neutCreators').innerHTML = neutCreators;
+        document.getElementById('neutrons').innerHTML = neutrons;
+    };
+    var nextneutCreatorCost = Math.floor(10 * Math.pow(1.1,neutCreators));
+    document.getElementById('neutCreatorCost').innerHTML = nextneutCreatorCost;
+    
+};
+function neuCreator(){
+    var elecCreatorCost = Math.floor(10 * Math.pow(1.1,elecCreators));
+    if(electrons >= elecCreatorCost){
+        elecCreators = elecCreators + 1;
+        electrons = electrons - elecCreatorCost;
+        document.getElementById('elecCreators').innerHTML = elecCreators;
+        document.getElementById('electrons').innerHTML = elecrons;
+    };
+    var nextelecCreatorCost = Math.floor(10 * Math.pow(1.1,elecCreators));
+    document.getElementById('elecCreatorCost').innerHTML = nextelecCreatorCost;
+    
+};
+
 
 function HCreator(){
     var HCreatorCost = Math.floor(10 * Math.pow(1.1,HCreators));
@@ -68,6 +94,6 @@ window.setInterval(function(){
 	protClick(protCreators);
 	//neutClick(HCreators);
 	//elecClick(HCreators);
-	//HydrClick(HCreators);
+	HydrClick(HCreators);
 	
 }, 1000);
