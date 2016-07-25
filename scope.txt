@@ -1,0 +1,34 @@
+Scope:
+
+Electrons, Neutrons & Protrons
+    Auto Inc
+    
+Periodic Table
+    Elements
+        Cost
+    Auto Inc Elements
+
+Common Compounds
+    A lot of Glucose = Sugar
+    A lot of **** = Wheat
+    
+Mix Compounds to create items
+    Glucose + Wheat = Cookie
+    Quartz + Plastic = Mouse
+    etc
+        Make Common/Pop Culture items
+
+Use items to create living world
+    Mouse + computer + man + Building = school
+    Man + Woman = House
+    Man + Car = Work
+    Many Work + Many Home = Town
+    Many Town = Capital
+    Many Capitals = Nation
+
+Use many Elements to create worlds
+    Many Hydrogen + Oxygen = Water = Neptune
+    Many Hydrogen + **** = Sun 
+    Planets = Solar System
+    Solar System = Galaxy
+    Galaxy = Universe
