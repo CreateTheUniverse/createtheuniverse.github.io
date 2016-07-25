@@ -1,26 +1,26 @@
-<!DOCTYPE html>
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body>
+    <h1>SUPER DUPER BETA. VERSION 0.000001</h1>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l"><button onclick="protClick(1)">Create Protron</button></th>
+    <th class="tg-yw4l"><button onclick="neutClick(1)">Create Neutron</button></th>
+    <th class="tg-yw4l"><button onclick="elecClick(1)">Create Electron</button></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">Protons: <span id="protrons">0</span></td>
+    <td class="tg-yw4l">Neutrons: <span id="neutrons">0</span></td>
+    <td class="tg-yw4l">Electrons: <span id="electrons">0</span></td>
+  </tr>
+</table>        
+        <p />
+        <button onclick="protCreator(1)">Buy Protron Creator </button>
+        Protron Creators: <span id="protCreators">0</span><br />
+        Cost: <span id="protCreatorCost">10</span><br />
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Create The Universe">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Create The Universe</title>
-  </head>
-
-  <body>
-		<button onclick="protClick(1)">Create Protron</button>
-        <button onclick="neutClick(1)">Create Neutron</button>
-        <button onclick="elecClick(1)">Create Electron</button>
-		<p />
-		Protons: <span id="protrons">0</span>
-		<br />
-		Neutrons: <span id="neutrons">0</span>
-		<br />
-		Electrons: <span id="electrons">0</span>
 		
         <p />
         <button onclick="buyHydrogen(1)">Hydrogen</button>
@@ -29,11 +29,14 @@
         
         <p />
         <button onclick="HCreator(1)">Buy H Creator</button>
-        H Creators: <span id="H">0</span><br />
-        Cost: <span id="HcostP">1</span> Protron & <span id="HcostE">1</span> Electron
+        H Creators: <span id="HCreators">0</span><br />
+        Cost: <span id="HCreatorCost">10</span><br />
 
         
         
-		<script type="text/javascript" src="javascripts/main.js"></script>
-  </body>
+
+        
+        
+		<script type="text/javascript" src="main.js"></script>
+	</body>
 </html>
