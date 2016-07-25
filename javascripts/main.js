@@ -90,10 +90,12 @@ function elecCreator(){
 function HCreator(){
     var HCreatorCost = Math.floor(10 * Math.pow(1.1,HCreators));
     if(Hydrogen >= HCreatorCost){
-        HCreators = HCreators + 1;
-        Hydrogen = Hydrogen - HCreatorCost;
-        document.getElementById('HCreators').innerHTML = HCreators;
-        document.getElementById('H').innerHTML = Hydrogen;
+    	if(protrons >= 1 && neutrons >= 1){
+	        HCreators = HCreators + 1;
+        	Hydrogen = Hydrogen - HCreatorCost;
+        	document.getElementById('HCreators').innerHTML = HCreators;
+        	document.getElementById('H').innerHTML = Hydrogen;
+    	};
     };
     var nextHCreatorCost = Math.floor(10 * Math.pow(1.1,HCreators));
     document.getElementById('HCreatorCost').innerHTML = nextHCreatorCost;
