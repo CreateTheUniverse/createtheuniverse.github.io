@@ -92,8 +92,8 @@ function HCreator(){
 window.setInterval(function(){
 	
 	protClick(protCreators);
-	//neutClick(HCreators);
-	//elecClick(HCreators);
+	neutClick(neutCreators);
+	elecClick(elecCreators);
 	HydrClick(HCreators);
 	
 }, 1000);
