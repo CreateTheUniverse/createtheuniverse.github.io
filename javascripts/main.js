@@ -19,7 +19,7 @@ function elecClick(number){
 
 var Hydrogen = 0;
 
-function HydrClick(){
+function buyHydrogen(){
     if(protrons >= 1 && electrons >= 1){
         Hydrogen = Hydrogen + 1;
         protrons = protrons - 1;
@@ -68,7 +68,7 @@ function elecCreator(){
         elecCreators = elecCreators + 1;
         electrons = electrons - elecCreatorCost;
         document.getElementById('elecCreators').innerHTML = elecCreators;
-        document.getElementById('electrons').innerHTML = elecrons;
+        document.getElementById('electrons').innerHTML = electrons;
     };
     var nextelecCreatorCost = Math.floor(10 * Math.pow(1.1,elecCreators));
     document.getElementById('elecCreatorCost').innerHTML = nextelecCreatorCost;
