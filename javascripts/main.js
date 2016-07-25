@@ -1,6 +1,6 @@
-var protrons = 0;
-var neutrons = 0;
-var electrons = 0;
+var protrons = 100;
+var neutrons = 100;
+var electrons = 100;
 
 function protClick(number){
     protrons = protrons + number;
@@ -17,7 +17,7 @@ function elecClick(number){
     document.getElementById("electrons").innerHTML = electrons;
 };
 
-var Hydrogen = 0;
+var Hydrogen = 100;
 
 function buyHydrogen(){
     if(protrons >= 1 && electrons >= 1){
@@ -28,19 +28,46 @@ function buyHydrogen(){
         document.getElementById('protrons').innerHTML = protrons;
         document.getElementById('electrons').innerHTML = electrons;
 
-    }
+    };
     
-}
+};
 
+var protCreators = 0;
+var neutCreators = 0;
+var elecCreators = 0;
 var HCreators = 0;
+
+function protCreator(){
+    var protCreatorCost = Math.floor(10 * Math.pow(1.1,protCreators));
+    if(protrons >= protCreatorCost){
+        protCreators = protCreators + 1;
+        protons = protrons - protCreatorCost;
+        document.getElementById('protCreators').innerHTML = protCreators;
+        document.getElementById('protrons').innerHTML = protrons;
+    };
+    var nextprotCreatorCost = Math.floor(10 * Math.pow(1.1,protCreators));
+    document.getElementById('protCreatorCost').innerHTML = nextprotCreatorCost;
+    
+};
 
 function HCreator(){
     var HCreatorCost = Math.floor(10 * Math.pow(1.1,HCreators));
     if(Hydrogen >= HCreatorCost){
-        HCreators= HCreators + 1;
+        HCreators = HCreators + 1;
         Hydrogen = Hydrogen - HCreatorCost;
-        document.getElementById('HCreators').innerHTML = HCreator;
-        document.getElementById('Hydrogen').innerHTML = Hydrogen;
-        
-        }
-}
+        document.getElementById('HCreators').innerHTML = HCreators;
+        document.getElementById('H').innerHTML = Hydrogen;
+    };
+    var nextHCreatorCost = Math.floor(10 * Math.pow(1.1,HCreators));
+    document.getElementById('HCreatorCost').innerHTML = nextHCreatorCost;
+    
+};
+
+window.setInterval(function(){
+	
+	protClick(protCreators);
+	//neutClick(HCreators);
+	//elecClick(HCreators);
+	//HydrClick(HCreators);
+	
+}, 1000);
